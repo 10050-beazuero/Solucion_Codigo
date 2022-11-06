@@ -57,3 +57,19 @@ async function deshabilitar(){
 
 }
 
+function showContent(){
+	var elem = document.getElementById('FormConfidencial');
+    var option = document.getElementById('chbEntrega2');
+    if(option.checked){
+        elem.style.display='block';
+    }else{
+        elem.style.display='none';
+        }
+    }
+function comprobar(obj){
+    if (obj.checked){
+        document.getElementById('SubmitDireccion').disabled = false;
+    }else{
+        document.getElementById('SubmitDireccion').disabled = true;
+    }
+}

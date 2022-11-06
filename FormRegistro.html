@@ -4,25 +4,6 @@
   <head>
     <meta charset="utf-8">
     <title>LOGISTICA</title>
-    <script type="text/javascript">
-      function showContent(){
-        var elem = document.getElementById('FormConfidencial');
-        var option = document.getElementById('chbEntrega2');
-        if(option.checked){
-          elem.style.display='block';
-        }else{
-          elem.style.display='none';
-        }
-      }
-      function comprobar(obj){
-            if (obj.checked){
-              document.getElementById('SubmitDireccion').disabled = false;
-            }
-          else{
-              document.getElementById('SubmitDireccion').disabled = true;
-            }
-      }
-    </script>
     <style type="text/css">
       #FormConfidencial{
         display: none;
@@ -62,7 +43,7 @@
          </select>
 		 
          <br><br>
-           <input type="submit" name="SubmitDireccion" id="SubmitDireccion" value="REGISTRAR">
+           <input type="submit" name="SubmitDireccion" id="SubmitDireccion" value="REGISTRAR" disabled>
        </fieldset>
     </form>
 	
@@ -83,6 +64,7 @@
     </form>
     <br><br>
     <a href="index.html">Regresar</a>
+    <script src="js/funciones.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   </body>
